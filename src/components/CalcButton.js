@@ -18,7 +18,7 @@ export default class CalcButton extends React.Component {
   render() {
     var r = this.props.radius;
     var w = this.props.radius * 2;
-    var h = this.props.radius * 2;
+    var h = this.props.radius * 1.5;
     var bc = this.props.backgroundColor;
 
     return (

@@ -9,7 +9,7 @@ require("../lib/swisscalc.calc.calculator.js");
 
 import React from 'react';
 import { StyleSheet, Dimensions, PanResponder, View, Text } from 'react-native';
-import { CalcDisplay, CalcButton } from '../components';
+import { CalcDisplay, CalcButton } from './index';
 
 export default class CalculatorScreen extends React.Component {
 
@@ -151,5 +151,5 @@ export default class CalculatorScreen extends React.Component {
 }
 
 const styles = StyleSheet.create({
-  container: { flex: 1, paddingVertical: 5, backgroundColor: "black" },
+  container: { flex: 1, paddingVertical: 4, backgroundColor: "black" },
 })

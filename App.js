@@ -1,8 +1,11 @@
 import React from 'react';
-import CalculatorScreen from "./src/screens/CalculatorScreen";
+import { NavigationContainer } from "@react-navigation/native";
+import Drawers from "./src/Drawers";
 
 export default function App() {
   return (
-      <CalculatorScreen/>
+      <NavigationContainer>
+      <Drawers/>
+      </NavigationContainer>
   );
 }
