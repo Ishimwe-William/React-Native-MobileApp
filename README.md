@@ -18,12 +18,13 @@ Metro (the local dev server) is run from the wrong folder. Check if Metro is run
 3. `React-Native-Reanimated: error: node_modules\react-native-reanimated\src\index.ts:`
       * Solution:
           * add this to 'babel.config.js' file:
-            ^module.exports = function(api) {
-                api.cache(true);
-                return {
-                  presets: ['babel-preset-expo'],
-                  plugins: ['react-native-reanimated/plugin'],
+        ######
+                module.exports = function(api) {
+                  api.cache(true);
+                  return {
+                    presets: ['babel-preset-expo'],
+                    plugins: ['react-native-reanimated/plugin'],
+                  };
                 };
-              };^
-            and restart
+        and restart
 
