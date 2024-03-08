@@ -13,7 +13,17 @@ Metro (the local dev server) is run from the wrong folder. Check if Metro is run
       * yarn add react-native-reanimated@3.7.0
     ##### You can also use `npm`
 2. `Unable to resolve "react-native-safe-area-context" from "node_modules\@react-navigation\stack\src\views\Header\Header.tsx"`
-     * Solution: 
-      * yarn add react-native-safe-area-context
-3.
+     * Solution:
+         * yarn add react-native-safe-area-context
+3. `React-Native-Reanimated: error: node_modules\react-native-reanimated\src\index.ts:`
+      * Solution:
+          * add this to 'babel.config.js' file
+            `module.exports = function(api) {
+                api.cache(true);
+                return {
+                  presets: ['babel-preset-expo'],
+                  plugins: ['react-native-reanimated/plugin'],
+                };
+              };`
+            and restart
 
