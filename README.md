@@ -12,4 +12,8 @@ Metro (the local dev server) is run from the wrong folder. Check if Metro is run
       * yarn add react-native-gesture-handler@2.15.0
       * yarn add react-native-reanimated@3.7.0
     ##### You can also use `npm`
-2. 
+2. `Unable to resolve "react-native-safe-area-context" from "node_modules\@react-navigation\stack\src\views\Header\Header.tsx"`
+     * Solution: 
+      * yarn add react-native-safe-area-context
+3.
+
